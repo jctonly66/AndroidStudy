@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.study.android.jct.Animator.AnimatorActivty"
+    android:layout_margin="10dp">
+
+    <LinearLayout
+        android:id="@+id/ll_1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/bt_alpha"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="Alpha"
+            android:textAllCaps="false"/>
+
+        <Button
+            android:id="@+id/bt_Rotation"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="Rotation"
+            android:textAllCaps="false"/>
+
+        <Button
+            android:id="@+id/bt_Translation"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="Translation"
+            android:textAllCaps="false"/>
+
+        <Button
+            android:id="@+id/bt_ScaleY"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="ScaleY"
+            android:textAllCaps="false"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_below="@+id/ll_1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+        android:id="@+id/bt_AnimatorSet"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:text="AnimatorSet"
+        android:textAllCaps="false"/>
+
+        <Button
+            android:id="@+id/bt_getViewStub"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="Object动画"
+            android:textAllCaps="false"
+            />
+
+        <Button
+            android:id="@+id/bt_Interpolator"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:textSize="12sp"
+            android:text="自定义Interpolator"
+            android:textAllCaps="false"
+            />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_property_animator"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Property Animator!"
+        android:textSize="20sp"
+        android:layout_centerInParent="true"
+        />
+
+    <android.support.v7.widget.ViewStubCompat
+        android:id="@+id/viewstup"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout="@layout/my_animator_view"/>
+</RelativeLayout>
