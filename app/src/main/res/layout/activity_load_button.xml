@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context="com.study.android.jct.view.LoadButtonActivity">
+
+    <com.study.android.jct.view.LoadButton
+        android:layout_gravity="center_horizontal"
+        android:id="@+id/btn_status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:backColor="#009966"
+        app:contentPaddingLR="20dp"
+        app:contentPaddingTB="20dp"
+        app:rectWidth="10dp"
+        android:textColor="@android:color/white"
+        app:progressedWidth="4dp"
+        android:textSize="36sp"
+        android:text="点击加载" />
+    <Button
+        android:id="@+id/btn_test_successed"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="加载成功"/>
+    <Button
+        android:id="@+id/btn_test_error"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="加载失败"/>
+    <Button
+        android:id="@+id/btn_reset"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="重置按钮"/>
+</LinearLayout>

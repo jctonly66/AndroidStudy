@@ -2,8 +2,9 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.study.android.jct">
 
-    <uses-permission android:name="android.permission.INTERNET"/>
-    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -18,10 +19,13 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".Animator.AnimatorActivty">
-        </activity>
-        <activity android:name=".ImageLoader.ImageLoaderActivity"
-            android:hardwareAccelerated="true">
+        <activity android:name=".Animator.AnimatorActivty" />
+        <activity
+            android:name=".ImageLoader.ImageLoaderActivity"
+            android:hardwareAccelerated="true" />
+        <activity android:name=".MemoryTest.MemoryActivity" />
+        <activity android:name=".view.LoadButtonActivity">
+
         </activity>
     </application>
 
